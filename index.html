@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jansen Elétrica</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0b0b0b;
+      color:white;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      background:#000;
+      border-bottom:2px solid #ffd000;
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:bold;
+      color:#ffd000;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd000;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1974&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero-content h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero-content span{
+      color:#ffd000;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      margin-bottom:30px;
+      color:#ccc;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#ffd000;
+      color:black;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    .services{
+      padding:80px 8%;
+      text-align:center;
+    }
+
+    .services h2{
+      font-size:42px;
+      margin-bottom:50px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#151515;
+      padding:40px 25px;
+      border-radius:15px;
+      border:1px solid #2b2b2b;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#ffd000;
+    }
+
+    .card h3{
+      color:#ffd000;
+      margin-bottom:15px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      border-top:1px solid #333;
+      color:#aaa;
+    }
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:38px;
+      }
+
+      nav{
+        display:none;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    ⚡ Jansen Elétrica
+  </div>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Serviços</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      Instalações Elétricas com
+      <span>Qualidade</span>
+    </h1>
+
+    <p>
+      Atendimento profissional em Mesquita e adjacências.
+    </p>
+
+    <a class="btn" href="https://wa.me/5521995385122">
+      Solicitar orçamento
+    </a>
+
+  </div>
+
+</section>
+
+<section class="services">
+
+  <h2>Nossos Serviços</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Instalações</h3>
+      <p>Serviços residenciais e comerciais.</p>
+    </div>
+
+    <div class="card">
+      <h3>Quadros Elétricos</h3>
+      <p>Montagem, organização e manutenção.</p>
+    </div>
+
+    <div class="card">
+      <h3>Manutenção</h3>
+      <p>Correções elétricas e melhorias.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  © 2026 Jansen Elétrica - Todos os direitos reservados.
+
+</footer>
+
+</body>
+</html>
